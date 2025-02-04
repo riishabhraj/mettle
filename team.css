@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+    body{
+    overflow-x: hidden;
+    }
+    .hi-slide{
+        margin-left:  -215px !important;
+        /* overflow: hidden; */
+        width: 157vw !important;
+    }
+    .navbar{
+        width: 100vw;
+    }
+}
+body {
+    background: url(Gradient.png)!important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mettle'25</title>
+	<link rel="shortcut icon" href="new-mettle-logo.png" type="image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+	<style>
+		body {
+			font-family: 'Poppins', sans-serif;
+			background: url(Gradient.png) no-repeat fixed;
+			background-size: cover;
+			color: white;
+		}
+
+		.navbar {
+			background-color: rgba(0, 0, 0, 0.8);
+			padding: 1rem;
+		}
+
+		.navbar-brand img {
+			width: 80px;
+			height: auto;
+		}
+
+		.nav-link {
+			color: white !important;
+			margin: 0 10px;
+		}
+
+		.banner-image {
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.main-title {
+			font-size: 4rem;
+			background: linear-gradient(360deg, #FFF0DA 25.66%, #94641E 27.63%, #FFF2DB 77.19%, #EAC885 84.08%, #FBF5D1 86.71%, #BD9A4B 88.01%, #ECD8A3 88.02%);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+			font-weight: 600;
+		}
+
+		.tagline {
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		.btn-custom {
+			background: linear-gradient(3.88deg, #FFF0DA -1.89%, #94641E 1.3%, #FFF2DB 81.44%, #EAC885 92.58%, #FBF5D1 96.83%, #BD9A4B 98.94%, #ECD8A3 98.95%);
+			color: black;
+			font-weight: 700;
+			padding: 0.75rem 1.5rem;
+			border: none;
+		}
+
+		.sponsors {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2rem;
+			margin: 2rem 0;
+		}
+
+		.sponsor1 img {
+			width: 200px;
+			height: 150px;
+			object-fit: contain;
+			border: 3px solid #d6c02a;
+			border-radius: 15px;
+		}
+
+		.countdown {
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+			margin: 2rem 0;
+		}
+
+		.countdown-item {
+			background-color: rgba(167, 182, 106, 0.28);
+			border: 3px solid #d6c02a;
+			border-radius: 10px;
+			width: 80px;
+			height: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 3rem;
+		}
+
+		.past-events {
+			margin: 4rem 0;
+		}
+
+		.event-card {
+			background-color: rgba(255, 255, 255, 0.1);
+			border-radius: 10px;
+			overflow: hidden;
+			margin-bottom: 1rem;
+		}
+
+		.event-card img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+
+		footer {
+			background-color: rgba(0, 0, 0, 0.8);
+			padding: 2rem 0;
+		}
+
+		.social-network {
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.social-network li {
+			margin: 0 10px;
+		}
+
+		.social-network a {
+			color: white;
+			font-size: 1.5rem;
+		}
+
+		@media (max-width: 768px) {
+			.main-title {
+				font-size: 2.5rem;
+			}
+
+			.tagline {
+				font-size: 1.2rem;
+			}
+
+			.countdown-item {
+				width: 60px;
+				height: 90px;
+				font-size: 2rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="mettle-2025-logo.png" style="height: 50px; width: 50px;" alt="Mettle Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="events.html">Workshops & Events</a></li>
+					<li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+					<li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="banner-image">
+		<div class="content">
+			<h1 class="main-title">METTLE '25</h1>
+			<p class="tagline">Redifining Realities : STRATUM</p>
+			<a href="events.html" class="btn btn-custom">Checkout our Events</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<h2 class="text-center mt-5">Brands we've worked with</h2>
+		<div class="sponsors">
+			<div class="sponsor1" data-aos="fade-left">
+				<img src="chennaimetco.jpg" alt="Chennai Metco">
+			</div>
+			<div class="sponsor1" data-aos="fade-left">
+				<img src="jsw.png" alt="JSW">
+			</div>
+			<div class="sponsor1" data-aos="fade">
+				<img src="ischool.png" alt="iSchool">
+			</div>
+		</div>
+
+		<div class="sponsors">
+			<div class="sponsor1" data-aos="fade-left">
+				<img src="iim-logo.webp" alt="iim-logo">
+			</div>
+			<div class="sponsor1" data-aos="fade-left">
+				<img src="cywreck.jpg" alt="cywreck">
+			</div>
+			<div class="sponsor1" data-aos="fade">
+				<img src="engage-x.png" alt="engage-x">
+			</div>
+		</div>
+
+		<h2 class="text-center mt-5">Countdown</h2>
+		<div class="countdown">
+			<div class="countdown-item" id="days"></div>
+			<div class="countdown-item" id="hours"></div>
+			<div class="countdown-item" id="minutes"></div>
+			<div class="countdown-item" id="seconds"></div>
+		</div>
+		<div class="text-center">
+			<p>Days : Hours : Minutes : Seconds</p>
+		</div>
+
+		<div class="text-center mt-4">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSflQKAFJbmhK1HQ5vIyBUJkY7NlvpqOV2B3nOx8OvE8-25FOA/viewform"
+				class="btn btn-custom" target="_blank">
+				Register for Mettle '25
+			</a>
+		</div>
+	</div>
+
+	<footer style="margin-top: 10px;">
+		<div class="container">
+			<ul class="social-network">
+				<li><a href="https://www.facebook.com/nitt.mettle/" target="_blank"><i
+							class="fab fa-facebook-f"></i></a></li>
+				<li><a href="https://www.linkedin.com/company/mettle-nit-trichy/" target="_blank"><i
+							class="fab fa-linkedin-in"></i></a></li>
+				<li><a href="https://www.instagram.com/mettle_nitt/" target="_blank"><i
+							class="fab fa-instagram"></i></a></li>
+				<li><a href="https://mobile.twitter.com/mettlenitt" target="_blank"><i class="fab fa-twitter"></i></a>
+				</li>
+				<li><a href="https://www.youtube.com/c/MettleNITTrichy" target="_blank"><i
+							class="fab fa-youtube"></i></a></li>
+				<li><a href="https://medium.com/mettle-nit-trichy" target="_blank"><i class="fab fa-medium-m"></i></a>
+				</li>
+			</ul>
+			<hr style="border-color: white; width: 50%; margin: 20px auto;">
+			<p class="text-center">Made with <span style="color: #d62a2a;">&hearts;</span> by Mettle'25</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+		});
+
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			spaceBetween: 10,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 50,
+				},
+			},
+		});
+
+		// Countdown Timer
+		var countDownDate = new Date("Feb 7, 2025 00:00:00").getTime();
+		var x = setInterval(function () {
+			var now = new Date().getTime();
+			var distance = countDownDate - now;
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("days").innerHTML = days;
+			document.getElementById("hours").innerHTML = hours;
+			document.getElementById("minutes").innerHTML = minutes;
+			document.getElementById("seconds").innerHTML = seconds;
+
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdown").innerHTML = "EXPIRED";
+			}
+		}, 1000);
+	</script>
+</body>
+
+</html>

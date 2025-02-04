@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mettle'25 - Teams</title>
+    <link rel="shortcut icon" href="mettlelogo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url(Gradient.png) no-repeat fixed;
+            background-size: cover;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand img {
+            width: 150px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #BD9A4B !important;
+        }
+
+        .team-banner {
+            margin-top: 80px;
+            min-height: 200px;
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(ellipse at center,
+                    rgba(255, 215, 0, 0.2),
+                    rgba(184, 134, 11, 0.2),
+                    rgba(139, 69, 19, 0.2),
+                    rgba(0, 0, 0, 0.2));
+        }
+
+        .head-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 1rem 0;
+        }
+
+        .team-title {
+            font-size: clamp(2rem, 5vw, 4rem);
+            background: linear-gradient(360deg,
+                    #FFF0DA 25.66%,
+                    #94641E 27.63%,
+                    #FFF2DB 77.19%,
+                    #EAC885 84.08%,
+                    #FBF5D1 86.71%,
+                    #BD9A4B 88.01%,
+                    #ECD8A3 88.02%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 500;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        /* Custom carousel styles */
+        .carousel {
+            max-width: 754px;
+            margin: 100px auto 0;
+        }
+
+        .carousel-item img {
+            height: 292px;
+            object-fit: contain;
+            border: 3px solid #BD9A4B;
+            border-radius: 4px;
+            background-color: #333;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            background-color: #BD9A4B;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 1;
+        }
+
+        .carousel-control-prev {
+            left: -50px;
+        }
+
+        .carousel-control-next {
+            right: -50px;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: #d6c02a;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .social-network {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        .social-network li {
+            margin: 0 5px;
+        }
+
+        .social-network a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-network a:hover {
+            color: #BD9A4B;
+        }
+
+        @media (max-width: 991px) {
+            .carousel-control-prev {
+                left: 10px;
+            }
+
+            .carousel-control-next {
+                right: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar remains the same -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a href="index.html">
+                <img src="mettle-2025-logo.png" style="height: 50px; width: 50px;" alt="Mettle Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Workshops & Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="team-banner">
+        <h1 class="team-title">TEAMS</h1>
+    </div>
+
+    <h1 class="team-title" style="padding: 50px 0;">EXCOMMS</h1>
+    <div class="text-center mb-4">
+        <img src="ayush.jpg" alt="chairperson" style="max-width: 50%; height: auto; border-radius: 100%;">
+        <h1 class="team-title">Ayush Dubey</h1>
+        <h3 class="head-title">Chairperson</h3>
+    </div>
+
+    <div class="text-center mb-4">
+        <img src="prithvi.jpg" alt="overall-coordinator" style="max-width: 50%; height: auto; border-radius: 100%;">
+        <h1 class="team-title">Prithvi Shree</h1>
+        <h3 class="head-title">Overall Coordinator</h3>
+    </div>
+
+    <div class="text-center mb-4">
+        <img src="sanskriti.jpg" alt="treasurer" style="max-width: 50%; height: auto; border-radius: 100%">
+        <h1 class="team-title
+        ">Sanskriiti Mittal</h1>
+        <h3 class="head-title">Treasurer</h3>
+    </div>
+
+    <div class="container">
+        <!-- Bootstrap Carousel -->
+        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+            <h1 class="team-title">Core Members</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="dist/TeamImages/GL&Exhibition.png" class="d-block w-100" alt="GL & Exhibition">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/Workshops.png" class="d-block w-100" alt="Workshops">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/Publicity&Relations.png" class="d-block w-100"
+                        alt="Publicity & Relations">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/METTLE_CORE.png" class="d-block w-100" alt="METTLE CORE">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/EXCOMSS.png" class="d-block w-100" alt="EXCOMSS">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/Marketing.png" class="d-block w-100" alt="Marketing">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/Events&SR.png" class="d-block w-100" alt="Events & SR">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/Content&Online.png" class="d-block w-100" alt="Content & Online">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/Webops.png" class="d-block w-100" alt="Webops">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/OrganisingComittee.png" class="d-block w-100" alt="Organising Committee">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/Ambience.png" class="d-block w-100" alt="Ambience">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/GeneralSecretary.png" class="d-block w-100" alt="General Secretary">
+                </div>
+                <div class="carousel-item">
+                    <img src="dist/TeamImages/JointSecretary.png" class="d-block w-100" alt="Joint Secretary">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer remains the same -->
+    <footer>
+        <div class="container">
+            <ul class="social-network">
+                <li><a href="https://www.facebook.com/nitt.mettle/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/mettle-nit-trichy/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/mettle_nitt/" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://mobile.twitter.com/mettlenitt" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/c/MettleNITTrichy" target="_blank"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li><a href="https://medium.com/mettle-nit-trichy" target="_blank"><i class="fab fa-medium-m"></i></a>
+                </li>
+            </ul>
+            <hr style="border-color: white; width: 50%; margin: 20px auto;">
+            <p class="text-center">Made with <span style="color: #d6c02a;">&hearts;</span> by Mettle'25</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
